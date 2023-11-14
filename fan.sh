@@ -1,7 +1,7 @@
 #!/bin/bash
 
-max_on=55
-max_off=50
+max_on=80
+max_off=70
 
 prefix="RPI Fan Service:"
 
@@ -30,5 +30,5 @@ then
 
 # keep the fan as it is  
 else 
-  /usr/bin/logger -i "$prefix Current temp is $t2 [C] (thresholds <$max_off[C] & >$max_on[C]) and the fan is $f2"
+  /usr/bin/logger -i "$prefix Current temp is $t2 [C] (thresholds: OFF < $max_off[C] & ON > $max_on[C]) and the fan is $f2"
 fi
