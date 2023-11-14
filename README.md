@@ -16,6 +16,7 @@ sudo chmod a+x /opt/fan.sh
 
 sudo cp ./fan.service /etc/systemd/system/
 sudo cp ./fan.timer /etc/systemd/system/
+sudo chmod a+r /etc/systemd/system/fan.*
 
 sudo systemctl enable --now fan.service
 ```
