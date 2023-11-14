@@ -1,0 +1,8 @@
+[Unit]
+Description=My RPI Fan Service Timer
+[Timer]
+OnBootSec=10
+OnUnitActiveSec=30
+AccuracySec=1s
+[Install]
+WantedBy=timers.target
