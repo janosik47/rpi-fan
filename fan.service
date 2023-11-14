@@ -1,0 +1,4 @@
+[Unit]
+Description=My RPI Fan Service
+[Service]
+ExecStart=/opt/fan.sh
